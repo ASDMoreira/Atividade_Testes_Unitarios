@@ -3,21 +3,14 @@ package LojaAcessorios.Modulo1.Classes1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Produto {
+public  class Produto {
 
     private String nome;
-    private String valor;
-    private String tamanho;
-    private String material;
-    private String tipo;
+    private Double valor;
 
-
-    public Produto(String nome, String valor, String tamanho, String material, String tipo) {
+    public Produto(String nome, Double valor) {
         this.nome = nome;
         this.valor = valor;
-        this.tamanho = tamanho;
-        this.material = material;
-        this.tipo = tipo;
     }
 
     public String getNome() {
@@ -28,35 +21,11 @@ public class Produto {
         this.nome = nome;
     }
 
-    public String getValor() {
+    public Double getValor() {
         return valor;
     }
 
-    public void setValor(String valor) {
+    public void setValor(Double valor) {
         this.valor = valor;
-    }
-
-    public String getTamanho() {
-        return tamanho;
-    }
-
-    public void setTamanho(String tamanho) {
-        this.tamanho = tamanho;
-    }
-
-    public String getMaterial() {
-        return material;
-    }
-
-    public void setMaterial(String material) {
-        this.material = material;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
     }
 }

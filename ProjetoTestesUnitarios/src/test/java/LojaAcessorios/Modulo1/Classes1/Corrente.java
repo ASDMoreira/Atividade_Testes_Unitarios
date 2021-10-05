@@ -1,9 +1,38 @@
 package LojaAcessorios.Modulo1.Classes1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Corrente extends Produto {
 
 
-    public Corrente(String nome, String valor, String tamanho, String material, String tipo) {
-        super(nome, valor, tamanho, material, tipo);
+
+    private List<Produto> listaCorrentes;
+
+
+    public Corrente(String nome, Double valor) {
+        super(nome, valor);
+        this.listaCorrentes = new ArrayList<>(100);
     }
+
+
+    public void adicionarCorrente(Produto produto){
+
+        listaCorrentes.add(produto);
+    }
+
+
+    public boolean verificarValor(double valor){
+        for(int i = 0; i < listaCorrentes.size(); i++){
+            if(listaCorrentes.get(i).getValor().equals(valor)){
+                return true;
+
+            }
+
+        }
+
+        return false;
+    }
+
+
 }
