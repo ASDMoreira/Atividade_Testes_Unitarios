@@ -8,10 +8,13 @@ import org.junit.Test;
 
 public class VetorProdutosTest extends TestCase {
 
+
     @Test
     public void testAdicionarProduto() {
+
         VetorProdutos vetor1 = new VetorProdutos();
         VetorProdutos vetor2 = new VetorProdutos();
+
         vetor1.adicionarProduto(
                 new Produto("Cordão", 100.00));
         vetor2.adicionarProduto(
@@ -21,22 +24,24 @@ public class VetorProdutosTest extends TestCase {
 
     }
 
+
     @Test
     public void testVerificarValorProdutoTrue() {
-        VetorProdutos vetor = new VetorProdutos();
-        vetor.adicionarProduto(
+        VetorProdutos vetor3 = new VetorProdutos();
+        vetor3.adicionarProduto(
                 new Produto("Pingente", 20.00));
 
-        Assert.assertTrue(vetor.verificarValorProduto("Pingente"));
+        Assert.assertTrue(vetor3.verificarValorProduto("Pingente"));
     }
+
 
     @Test
     public void testVerificarValorProdutoFalse() {
-        VetorProdutos vetor = new VetorProdutos();
-        vetor.adicionarProduto(
+        VetorProdutos vetor4 = new VetorProdutos();
+        vetor4.adicionarProduto(
                 new Produto("Pingente", 20.00));
 
-        Assert.assertFalse(vetor.verificarValorProduto("Colar"));
+        Assert.assertFalse(vetor4.verificarValorProduto("Colar"));
     }
 
 

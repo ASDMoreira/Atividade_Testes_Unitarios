@@ -14,10 +14,18 @@ public class Pulseira extends Produto{
         this.listaPulseira = new ArrayList<>(100);
     }
 
-    public void adicionarCorrente(Produto produto){
+    public void adicionarPulseira(Produto produto){
         listaPulseira.add(produto);
     }
 
+    public boolean removerPulseira(String nome){
+        for (int i = 0; i < listaPulseira.size(); i++){
+            if(listaPulseira.get(i).getNome().equals(nome)){
+                listaPulseira.remove(i);
+                return true;
+            }
 
-
+        }
+        return false;
+    }
 }
