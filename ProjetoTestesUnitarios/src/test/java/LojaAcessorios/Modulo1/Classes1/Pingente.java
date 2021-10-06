@@ -14,7 +14,7 @@ public class Pingente extends Produto{
         this.listaPingentes = new ArrayList<>(100);
     }
 
-    public void adicionarCorrente(Produto produto){
+    public void adicionarPingente(Produto produto){
         listaPingentes.add(produto);
     }
 
