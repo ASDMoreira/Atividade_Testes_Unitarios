@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Produto.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ATVidTestesUnit</a> &gt; <a href="index.source.html" class="el_package">Classes1</a> &gt; <span class="el_source">Produto.java</span></div><h1>Produto.java</h1><pre class="source lang-java linenums">package Classes1;
+import java.util.ArrayList;
+import java.util.List;
+
+public  class Produto {
+
+    private String nome;
+    private Double valor;
+    private List&lt;Produto&gt; listaProduto;
+
+
+
+<span class="fc" id="L13">    public Produto(String nome, Double valor) {</span>
+<span class="fc" id="L14">        this.nome = nome;</span>
+<span class="fc" id="L15">        this.valor = valor;</span>
+<span class="fc" id="L16">        this.listaProduto = new ArrayList&lt;&gt;(100);</span>
+<span class="fc" id="L17">    }</span>
+
+
+
+    public String getNome() {
+<span class="fc" id="L22">        return nome;</span>
+    }
+
+    public void setNome(String nome) {
+<span class="nc" id="L26">        this.nome = nome;</span>
+<span class="nc" id="L27">    }</span>
+
+    public Double getValor() {
+<span class="fc" id="L30">        return valor;</span>
+    }
+
+    public void setValor(Double valor) {
+<span class="nc" id="L34">        this.valor = valor;</span>
+<span class="nc" id="L35">    }</span>
+
+    @Override
+    public boolean equals(Object obj){
+
+<span class="pc bpc" id="L40" title="1 of 2 branches missed.">        if(this == obj){</span>
+<span class="fc" id="L41">            return  true;</span>
+
+        }
+
+<span class="nc bnc" id="L45" title="All 2 branches missed.">        if(obj instanceof Produto){</span>
+<span class="nc bnc" id="L46" title="All 4 branches missed.">            if(this.nome.equals(((Produto) obj).getNome()) &amp;&amp; this.valor.equals(((Produto) obj).getValor())){</span>
+<span class="nc" id="L47">                return true;</span>
+
+            }
+
+        }
+
+<span class="nc" id="L53">        return false;</span>
+    }
+
+    public void addProduto(Produto produto){
+
+<span class="fc" id="L58">        listaProduto.add(produto);</span>
+<span class="fc" id="L59">    }</span>
+
+    public boolean removerProduto(String nome){
+<span class="fc bfc" id="L62" title="All 2 branches covered.">        for (int i = 0; i &lt; listaProduto.size(); i++){</span>
+<span class="fc bfc" id="L63" title="All 2 branches covered.">            if(listaProduto.get(i).getNome().equals(nome)){</span>
+<span class="fc" id="L64">                listaProduto.remove(i);</span>
+<span class="fc" id="L65">                return true;</span>
+            }
+
+        }
+
+<span class="fc" id="L70">        return false;</span>
+    }
+
+}
+
+
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

@@ -1,12 +1,10 @@
 package LojaAcessorios.Modulo2.TestesModulos2;
 
-import LojaAcessorios.Modulo2.Classes2.Pessoas;
-import LojaAcessorios.Modulo2.Classes2.VetorClientes;
+import Classes2.Pessoas;
+import Classes2.VetorClientes;
 import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
-
-import java.util.Arrays;
 
 public class VetorClientesTest extends TestCase {
 

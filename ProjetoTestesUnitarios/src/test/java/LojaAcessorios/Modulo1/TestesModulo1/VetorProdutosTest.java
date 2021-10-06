@@ -1,6 +1,6 @@
 package LojaAcessorios.Modulo1.TestesModulo1;
-import LojaAcessorios.Modulo1.Classes1.Produto;
-import LojaAcessorios.Modulo1.Classes1.VetorProdutos;
+import Classes1.Produto;
+import Classes1.VetorProdutos;
 import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;

@@ -1,0 +1,11 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+ATVidTestesUnit,Classes1,Pulseira,0,44,0,4,0,10,0,5,0,3
+ATVidTestesUnit,Classes1,Produto,29,59,7,5,8,16,6,8,2,6
+ATVidTestesUnit,Classes1,Corrente,0,40,0,4,0,9,0,5,0,3
+ATVidTestesUnit,Classes1,VetorProdutos,7,37,0,4,3,9,2,5,2,3
+ATVidTestesUnit,Classes1,Pingente,0,45,0,4,0,10,0,5,0,3
+ATVidTestesUnit,Classes2,Clientes,0,40,0,4,0,9,0,5,0,3
+ATVidTestesUnit,Classes2,Atendente,0,45,0,4,0,10,0,5,0,3
+ATVidTestesUnit,Classes2,VetorClientes,7,37,0,4,3,9,2,5,2,3
+ATVidTestesUnit,Classes2,TotalPagar,4,69,2,6,2,14,2,7,0,5
+ATVidTestesUnit,Classes2,Pessoas,40,60,9,5,11,17,8,9,3,7

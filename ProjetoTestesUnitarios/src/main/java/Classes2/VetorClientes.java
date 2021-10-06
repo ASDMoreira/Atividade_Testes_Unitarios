@@ -1,6 +1,4 @@
-package LojaAcessorios.Modulo2.Classes2;
-
-import LojaAcessorios.Modulo1.Classes1.Produto;
+package Classes2;
 
 import java.util.ArrayList;
 import java.util.List;

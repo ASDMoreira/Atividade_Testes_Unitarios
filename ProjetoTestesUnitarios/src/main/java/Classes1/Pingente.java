@@ -1,4 +1,4 @@
-package LojaAcessorios.Modulo1.Classes1;
+package Classes1;
 
 import java.util.ArrayList;
 import java.util.List;

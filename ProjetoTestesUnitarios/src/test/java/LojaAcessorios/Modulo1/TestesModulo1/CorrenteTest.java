@@ -1,6 +1,7 @@
 package LojaAcessorios.Modulo1.TestesModulo1;
 
-import LojaAcessorios.Modulo1.Classes1.Corrente;
+
+import Classes1.Corrente;
 import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;

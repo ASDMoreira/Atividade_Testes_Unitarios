@@ -1,11 +1,9 @@
 package LojaAcessorios.Modulo2.TestesModulos2;
 
-import LojaAcessorios.Modulo2.Classes2.TotalPagar;
+import Classes2.TotalPagar;
 import junit.framework.Assert;
 import junit.framework.TestCase;
 import org.junit.Test;
-
-import java.util.Arrays;
 
 public class TotalPagarTest extends TestCase {
 

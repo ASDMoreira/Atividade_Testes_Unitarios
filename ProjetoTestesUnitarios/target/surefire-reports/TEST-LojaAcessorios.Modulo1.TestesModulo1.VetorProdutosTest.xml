@@ -60,7 +60,7 @@
     <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="LojaAcessorios.Modulo1.TestesModulo1.VetorProdutosTest" name="testAdicionarProduto" time="0"/>
-  <testcase classname="LojaAcessorios.Modulo1.TestesModulo1.VetorProdutosTest" name="testVerificarValorProdutoTrue" time="0"/>
   <testcase classname="LojaAcessorios.Modulo1.TestesModulo1.VetorProdutosTest" name="testVerificarValorProdutoFalse" time="0"/>
+  <testcase classname="LojaAcessorios.Modulo1.TestesModulo1.VetorProdutosTest" name="testVerificarValorProdutoTrue" time="0"/>
+  <testcase classname="LojaAcessorios.Modulo1.TestesModulo1.VetorProdutosTest" name="testAdicionarProduto" time="0"/>
 </testsuite>
